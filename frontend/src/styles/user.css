@@ -1,0 +1,23 @@
+
+.S-user{
+
+  .link-button{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+      padding: 5px 25px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      border:1px solid var(--bg-color-20);
+
+      &:hover{
+        background: var(--bg-color-20);
+        border-color: var(--bg-color-15);
+        outline: 2px solid var(--bg-color-20);
+      }
+    }
+  }
+}

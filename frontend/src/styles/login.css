@@ -1,0 +1,112 @@
+.S-login {
+  margin: 2rem 1rem;
+  background-color: var(--bg-color-20);
+
+  .form {
+    border: 1px solid var(--bg-color-20);
+    padding: 1rem;
+    background-color: var(--bg-color-15);
+    border-radius: var(--U-radius);
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+
+    .form-heading {
+
+      h1 {
+        margin: 10px;
+        font-size: 1.8rem;
+      }
+      svg {
+        height: 5rem;
+      }
+      p{
+        color: rgb(204, 0, 0);
+        text-align: left;
+        margin: 0;
+      }
+    }
+
+    .field-div {
+      .input-div {
+        padding: 0.6rem 0.8rem;
+        border: 1px solid var(--bg-color-20);
+        background-color: var(--bg-color-15);
+        border-radius: var(--U-radius);
+        width: -webkit-fill-available;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+
+        input {
+          background: transparent;
+          border: none;
+          width: -webkit-fill-available;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      button {
+        width: -webkit-fill-available;
+        padding: 0.8rem 0.8rem;
+        border: 1px solid var(--bg-color-20);
+        background-color: var(--bg-color-15);
+        border-radius: var(--U-radius);
+
+        &:hover {
+          border: 1px solid var(--bg-color-15);
+          background-color: var(--bg-color-20);
+          outline: 2px solid var(--bg-color-20);
+        }
+      }
+    }
+
+    .field-div-forgot{
+      text-align: right;
+      margin: 0rem 0.4rem;
+    }
+
+    .field-div-check{
+      text-align: left;
+    }
+
+    .field-div-or {
+      margin: 1rem 0rem 0rem 0rem;
+      hr {
+        border: 1px solid var(--bg-color-20);
+      }
+      p {
+        position: relative;
+        margin: auto;
+        top: -1.5rem;
+        padding: 0.2rem 1.4rem;
+        width: fit-content;
+        background: var(--bg-color-15);
+      }
+    }
+
+    .field-div-other{
+      text-align: left;
+    }
+  }
+
+  .other {
+    padding: 1rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+      justify-content: center;
+      align-items: center;
+      width: 70vw;
+      margin-inline: auto;
+      padding: 2px;
+    }
+  }
+}

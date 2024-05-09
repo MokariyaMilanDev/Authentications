@@ -1,0 +1,13 @@
+
+.loading-icon {
+  animation: loading-icon 1.5s 0s infinite ease backwards;
+}
+
+@keyframes loading-icon {
+  0%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+}
